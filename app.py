@@ -47,8 +47,6 @@ line_bot_api = LineBotApi(line_token)
 # Channel Secret
 parser = WebhookParser(line_channel_sec)
 
-line_bot_api.push_message('Ucfd9d2f4a7a45fbf4143ed44fda3989d', TextSendMessage(text='你好!我是毛君伯 from YUSCO.'))
-
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
